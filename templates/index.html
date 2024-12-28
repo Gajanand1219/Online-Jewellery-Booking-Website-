@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Healet</title>
+
+  <link rel="icon" href="https://www.imagesredefined.in/wp-content/uploads/2018/09/wedding-photography-tips.jpg" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Healet
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/shop">Shop</a>
+                <a href="/blog">Blog</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- slider section -->
+  <section class="slider_section position-relative">
+    <div class="slider_bg_box">
+      <img src="{{ url_for('static', filename='images/slider-bg.jpg') }}" alt="Image 1">
+
+    </div>
+    <div class="slider_bg"></div>
+    <div class="container">
+      <div class="col-md-9 col-lg-8">
+        <div class="detail-box">
+          <h1>
+            Best Jewellery
+            <br> Collection
+          </h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem
+          </p>
+          <div>
+            <!-- <a href="" class="slider-link">
+              Shop Now
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end slider section -->
+
+  <!-- shop section -->
+
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Latest Products
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p1.png') }}" alt="Image 1">
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName1">Necklace</p>
+                <h6>
+                  Price
+                  <span>
+                    $200
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow1" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p2.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName2">Necklace</p>
+
+                <h6>
+                  Price
+                  <span>
+                    $300
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow2" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p3.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName3">Necklace</p>
+                <h6>
+                  Price
+                  <span>
+                    $110
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow3" class="bg-success text-white " data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p4.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName4">Ring</p>
+                <h6>
+                  Price
+                  <span>
+                    $45
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow4" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p5.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName5">Ring</p>
+                <h6>
+                  Price
+                  <span>
+                    $95
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow5" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p6.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName6">Earring</p>
+
+                <h6>
+                  Price
+                  <span>
+                    $70
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow6" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p7.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName7">Earring</p>
+
+                <h6>
+                  Price
+                  <span>
+                    $400
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow7" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/p8.png') }}" alt="Image 1">
+
+              </div>
+              <div class="detail-box">
+                <p class="card-text" id="itemName3">Necklace</p>
+                <h6>
+                  Price
+                  <span>
+                    $450
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+            <button id="orderNow8" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="btn-box">
+        <a href="/shop">
+          View All Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end shop section -->
+
+  <!-- ordder section -->
+
+
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Order Details</h5>
+                <a href="/" class="close-link position-absolute d-flex justify-content-center align-items-center rounded-circle border border-danger"
+                   style="top: 2px; right: 18px; width: 40px; height: 40px; background-color: black;">
+                    <span class="close text-yellow" aria-hidden="true" style="font-size: 40px;">&times;</span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <form action="/place_order" method="POST">
+                    <!-- Form fields -->
+                    <div class="mb-3">
+                        <p class=" bg-secondary text-white shadow p-3 rounded fs-5">Item Name: <span id="orderItemName"></span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p class=" bg-secondary text-white shadow p-3 rounded fs-5">Item Price: $<span id="orderPrice"></span></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control p-2" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile No</label>
+                        <input type="text" class="form-control p-2" id="number" name="number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control p-2" id="email" name="email" required>
+                    </div>
+  
+                    <input type="hidden" id="hiddenItemName" name="item_name" value="">
+                    <input type="hidden" id="hiddenPrice" name="price_per_day" value="">
+                    
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <select class="form-control p-2" name="payment_method" id="paymentMethod" required>
+                            <option value="Cash On Delivery">Cash On Delivery</option>
+                            <option value="PhonePe">PhonePe</option>
+                            <option value="cards">Cards</option>
+                        </select>
+                    </div>
+  
+                    <div class="mb-3">
+                    </div>
+  
+                    <button type="submit" class="btn btn-primary">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <!-- end order section -->
+
+  <!-- about section -->
+
+  <section class="about_section  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="Image 1">
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+            </p>
+            <a href="/about">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 px-0">
+          <div class="box offer-box1">
+            <img src="{{ url_for('static', filename='images/o1.jpg') }}" alt="Image 1">
+
+            <div class="detail-box">
+              <h2>
+                Upto 15% Off
+              </h2>
+              <a href="/shop">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 px-0">
+          <div class="box offer-box2">
+            <img src="{{ url_for('static', filename='images/o2.jpg') }}" alt="Image 1">
+
+            <div class="detail-box">
+              <h2>
+                Upto 10% Off
+              </h2>
+              <a href="/shop">
+                Shop Now
+              </a>
+            </div>
+          </div>
+          <div class="box offer-box3">
+            <img src="{{ url_for('static', filename='images/o3.jpg') }}" alt="Image 1">
+
+            <div class="detail-box">
+              <h2>
+                Upto 20% Off
+              </h2>
+              <a href="/shop">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- blog section -->
+
+  <section class="blog_section ">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Latest From Blog
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/b1.jpg') }}" alt="Image 1">
+
+              <h4 class="blog_date">
+                14 <br>
+                July
+              </h4>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Molestiae ad reiciendis dignissimos
+              </h5>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+              <a href="/blog">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/b2.jpg') }}" alt="Image 1">
+
+              <h4 class="blog_date">
+                15 <br>
+                July
+              </h4>
+            </div>
+            <div class="detail-box">
+              <h5>
+                Dolores vel maiores voluptatem enim
+              </h5>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+              <a href="/blog">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="https://wp.popxo.com/wp-content/uploads/2023/04/image-46.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Samantha Jonas
+                      </h6>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable cIt is a long established fact
+                      that a reader will be distracted by the readable c
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="https://th.bing.com/th/id/OIP.R9OBLRADFLQ6MrfUQkKmFQHaJQ?w=165&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Radhika Merchant
+                      </h6>
+                    </div>
+                    <p>
+                      It is well-known that a reader’s attention often drifts away when encountering text that appears easily readable but lacks meaningful content
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="https://www.southjewellery.com/wp-content/uploads/2019/11/isha-ambani-diamond-emerald-jewellery-1.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Isha Ambani
+                      </h6>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable cIt is a long established fact
+                      that a reader will be distracted by the readable c
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+<!-- Contact Section -->
+<section class="py-5 " id="contact">
+
+  <div class="container ">
+    <h1 class="text-center mb-4">Contact Us</h1>
+    <div class="d-flex justify-content-center bg-info">
+      <div class="col-md-7">
+        <form method="post" action="/send_contact" autocomplete="off">
+          <div class="form-group mb-3">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter your subject" name="subject" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row info_form_social_row">
+        <div class="col-md-8 col-lg-9">
+          <div class="info_form">
+            
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links">
+            <h4>
+              Menu
+            </h4>
+            <div class="info_links_menu">
+              <a href="/">Home</a>
+              <a href="/about">About</a>
+              <a href="/shop">Shop</a>
+              <a href="/blog">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              Instagram
+            </h4>
+            <div class="insta_box">
+              <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p1.png') }}" alt="Image 1">
+
+              </div>
+              <p>
+                long established fact that a reader
+              </p>
+            </div>
+            <div class="insta_box">
+              <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p2.png') }}" alt="Image 1">
+
+              </div>
+              <p>
+                long established fact that a reader
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>
+              About Us
+            </h4>
+            <p class="mb-0">
+              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +91 9359458009
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                gaju@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://github.com/Gajanand1219/Language-Detection-and-Text-Comparison-Application">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+
+<!-- jQuery and Bootstrap Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="/static/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function handleOrderButtonClick(cardNumber, itemName, pricePerDay) {
+        const orderNowButton = document.getElementById(`orderNow${cardNumber}`);
+        orderNowButton.addEventListener('click', function () {
+            // Open the modal and populate the form with item data
+            document.getElementById('orderItemName').textContent = itemName;
+            document.getElementById('orderPrice').textContent = pricePerDay;
+            
+            // Populate the hidden input fields with the selected item and price
+            document.getElementById('hiddenItemName').value = itemName;
+            document.getElementById('hiddenPrice').value = pricePerDay;
+            
+            // Open the modal
+            $('#orderModal').modal('show');
+        });
+    }
+
+    // Handle "Order Now" button click for each item
+    handleOrderButtonClick(1, "Necklace", 200);
+    handleOrderButtonClick(2, "Necklace", 300);
+    handleOrderButtonClick(3, "Necklace", 110);
+    handleOrderButtonClick(4, "Ring", 45);
+    handleOrderButtonClick(5, "Ring", 95);
+    handleOrderButtonClick(6, "Earring", 70);
+    handleOrderButtonClick(7, "Earring", 400);
+    handleOrderButtonClick(8, "Necklace", 450);
+});
+
+  </script>
+  
+
+</body>
+
+</html>
