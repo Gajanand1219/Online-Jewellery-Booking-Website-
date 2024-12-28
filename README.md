@@ -29,6 +29,10 @@ The website consists of the following parts:
 ## Screenshot
 
 ![Website Screenshot](https://i.postimg.cc/MGmvJ0df/IMG-20241228-WA0004.jpg)
+![Screenshot 2024-12-28 184109](https://github.com/user-attachments/assets/2b8d2083-bb09-4672-9598-78aa5862a2ed)
+![Screenshot 2024-12-28 184129](https://github.com/user-attachments/assets/de9f0568-9e32-488d-b3b2-2a7021a1db5f)
+![Screenshot 2024-12-28 184157](https://github.com/user-attachments/assets/6f223da6-98fd-4c0a-9cf9-1b5788b57309)
+![Screenshot 2024-12-28 184239](https://github.com/user-attachments/assets/1802e29c-3ad0-4843-b6e7-c207f986c536)
 
 ---
 
