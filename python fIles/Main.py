@@ -11,8 +11,8 @@ app = Flask(__name__)
 # Configuring Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'gajanan19022000@gmail.com'  # Your Gmail address
-app.config['MAIL_PASSWORD'] = 'jost higa wtmc wzlr'  # Your App Password
+app.config['MAIL_USERNAME'] = '_______'  # Your Gmail address
+app.config['MAIL_PASSWORD'] = '_______'  # Your App Password
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -22,8 +22,8 @@ mail = Mail(app)
  # Setting up SQL database URI
 db_host='localhost'
 db_user='root'
-db_password='gaju1234?'
-db_name='data'
+db_password='passoword enter'
+db_name='database name'
 
 # Function to connect to the MySQL database
 def get_db_connection():
@@ -92,7 +92,7 @@ def send_email():
     # Create email message
     msg = Message(subject=f"New Contact Messge from {name}: {subject}",  # Include name in subject
                   sender=app.config['MAIL_USERNAME'],             # Must be your verified sender email
-                  recipients=['gajanan19022000@gmail.com'])        # Use your email as recipient
+                  recipients=[' Your Gmail address'])        # Use your email as recipient
                   
     # Include user details in the body of the email
     msg.body = f"Message from :- {name}\n\n Email:-{email}\n\nsubject:- {subject}\n\n message:-{message}"
