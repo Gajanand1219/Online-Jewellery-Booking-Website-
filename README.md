@@ -79,10 +79,26 @@ The website consists of the following parts:
 - **Email**: SMTP for contact form and booking confirmations
 
 ---
+- **An online jewelry booking website simplifies the shopping process for customers and provides jewelers with a platform to showcase their products globally. Let me know if you’d like detailed project steps!**
 
-## Setup Instructions
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/jewelry-booking-website.git
-   cd jewelry-booking-website
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
