@@ -3,16 +3,14 @@ from flask import Flask, render_template, request, redirect, session, flash
 from flask_mail import Mail, Message
 import mysql.connector
 
-
 app = Flask(__name__)
-
 
 # /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 # Configuring Flask-Mail
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = '_______'  # Your Gmail address
-app.config['MAIL_PASSWORD'] = '_______'  # Your App Password
+app.config['MAIL_USERNAME'] = 'gajanan19022000@gmail.com'  # Your Gmail address
+app.config['MAIL_PASSWORD'] = 'jost higa wtmc wzlr'  # Your App Password
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -22,8 +20,8 @@ mail = Mail(app)
  # Setting up SQL database URI
 db_host='localhost'
 db_user='root'
-db_password='passoword enter'
-db_name='database name'
+db_password='gaju1234?'
+db_name='data'
 
 # Function to connect to the MySQL database
 def get_db_connection():
@@ -34,9 +32,6 @@ def get_db_connection():
         database=db_name
     )
     return conn
-
-
-
 
 # Create the database table if it doesn't exist
 
@@ -82,27 +77,28 @@ def blog():
 
 
 
+# ////////////////////////////////////////////////////////////////////////////////////
+
 @app.route('/send_contact', methods=["POST"])
 def send_email():
     name = request.form['name']
     email = request.form['email']
     subject = request.form['subject']
     message = request.form['message']
-
+    phone = request.form['phone']
     # Create email message
     msg = Message(subject=f"New Contact Messge from {name}: {subject}",  # Include name in subject
                   sender=app.config['MAIL_USERNAME'],             # Must be your verified sender email
-                  recipients=[' Your Gmail address'])        # Use your email as recipient
+                  recipients=['gajanan19022000@gmail.com'])        # Use your email as recipient
                   
     # Include user details in the body of the email
-    msg.body = f"Message from :- {name}\n\n Email:-{email}\n\nsubject:- {subject}\n\n message:-{message}"
+    msg.body = f"Message from :- {name}\n\n Email:-{email}\n\Requirment:-{subject}\n\nmessage:-{message}\n\nNumber:-{phone}"
 
     # Optionally set the reply-to header to the user's email
     msg.reply_to = email
 
     mail.send(msg)
     return redirect('/')
-
 
 # /////////////////////////////////////////////////////
 @app.route('/place_order', methods=["POST"])
@@ -147,9 +143,7 @@ def place_order():
     mail.send(msg)
 
     return redirect('/')
-
-
-
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 if __name__ == '__main__':
     create_table()
