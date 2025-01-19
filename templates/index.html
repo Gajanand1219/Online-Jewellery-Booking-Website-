@@ -16,7 +16,10 @@
   <title>Healet</title>
 
   <link rel="icon" href="https://www.imagesredefined.in/wp-content/uploads/2018/09/wedding-photography-tips.jpg" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -100,7 +103,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
               <img src="{{ url_for('static', filename='images/p1.png') }}" alt="Image 1">
               </div>
@@ -125,7 +128,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p2.png') }}" alt="Image 1">
 
@@ -151,7 +154,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p3.png') }}" alt="Image 1">
 
@@ -176,7 +179,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p4.png') }}" alt="Image 1">
 
@@ -202,7 +205,7 @@
         
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p5.png') }}" alt="Image 1">
 
@@ -227,7 +230,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p6.png') }}" alt="Image 1">
 
@@ -253,7 +256,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p7.png') }}" alt="Image 1">
 
@@ -280,7 +283,7 @@
 
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="/shop">
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/p8.png') }}" alt="Image 1">
 
@@ -390,8 +393,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
+            <a href="/about">
             <img src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="Image 1">
-
+            </a>
           </div>
         </div>
         <div class="col-md-6">
@@ -476,7 +480,7 @@
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <a href="/blog"> <div class="col-md-6">
           <div class="box">
             <div class="img-box">
               <img src="{{ url_for('static', filename='images/b1.jpg') }}" alt="Image 1">
@@ -498,9 +502,10 @@
               </a>
             </div>
           </div>
+        </a>
         </div>
         <div class="col-md-6">
-          <div class="box">
+          <a href="/blog"><div class="box">
             <div class="img-box">
               <img src="{{ url_for('static', filename='images/b2.jpg') }}" alt="Image 1">
 
@@ -521,6 +526,7 @@
               </a>
             </div>
           </div>
+        </a>
         </div>
       </div>
     </div>
@@ -628,42 +634,58 @@
 
 
 <!-- Contact Section -->
-<section class="py-5 " id="contact">
 
-  <div class="container ">
-    <h1 class="text-center mb-4">Contact Us</h1>
-    <div class="d-flex justify-content-center bg-info">
-      <div class="col-md-7">
-        <form method="post" action="/send_contact" autocomplete="off">
-          <div class="form-group mb-3">
-            <label for="name">Full Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+ <!-- Contact Section -->
+ <section class="py-5" id="contact" style="background-color: #f8f9fa; border-radius: 15px;">
+  <div class="container">
+      <h1 class="text-center mb-5 bg-primary p-2" style="color: #333; font-family: 'Arial', sans-serif;">Contact Us</h1>
+      <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+              <form method="post" action="/send_contact" autocomplete="off" class="p-4 shadow rounded" style="background-color: white;">
+                  <div class="form-group mb-4">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control form-control-lg" placeholder="Enter your name" name="name" required>
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <label for="Number" class="form-label">Phone Number</label>
+                      <input type="number" class="form-control form-control-lg" placeholder="Enter your number" name="phone" required>
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control form-control-lg" placeholder="Enter your email" name="email" required>
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <label for="subject" class="form-label">Requirement</label>
+                      <select class="form-control form-control-lg" name="subject" required>
+                          <option value="" disabled selected>Select your requirement</option>
+                          <option value="Photography">Necklace</option>
+                          <option value="Pre-Wedding Shoot">Earring</option>
+                          <option value="Wedding Coverage">RIng</option>
+                          <option value="Post-Wedding Shoot">Dimond ring</option>
+                          <option value="Other">Other</option>
+                      </select>
+                  </div>
+
+                  <div class="form-group mb-4">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control form-control-lg" rows="5" placeholder="Enter your message" name="message" required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg w-100" style="border-radius: 50px; transition: all 0.3s ease;">Submit</button>
+              </form>
           </div>
-          <div class="form-group mb-3">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+
+          <!-- Image Section -->
+          <div class="col-md-6 d-flex justify-content-center align-items-center">
+              <img src="https://opicxo.com/wp-content/uploads/2024/09/Inquire-Now.jpeg" class="img-fluid rounded shadow-lg" alt="Inquire Now" style="max-width: 90%; height: auto;">
           </div>
-          <div class="form-group mb-3">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" id="subject" placeholder="Enter your subject" name="subject" required>
-          </div>
-          <div class="form-group mb-3">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </form>
       </div>
-    </div>
   </div>
 </section>
-
-
-
-
-
-
-
 
   <!-- info section -->
   <section class="info_section layout_padding2">
@@ -676,16 +698,17 @@
         </div>
         <div class="col-md-4 col-lg-3">
 
-          <div class="social_box">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
+          <div class="">
+            <a href="https://www.instagram.com/gajanandeshmukh5823/" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="40" width="40" /></a>
+           
+            <a href="https://wa.me/9359458009" target="_blank">
+              <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" height="40" width="50" />
+          </a>
+          
+          <a href="https://www.linkedin.com/in/gajanan-deshmukh-0771a5250/" target="_blank">
+            <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+        </a>
+
           </div>
         </div>
       </div>
@@ -755,10 +778,10 @@
                 Call +91 9359458009
               </span>
             </a>
-            <a href="">
+            <a href="mailto:your-email@example.com">
               <i class="fa fa-envelope"></i>
               <span>
-                gaju@gmail.com
+                gajanand1219@gmail.com
               </span>
             </a>
           </div>
@@ -772,24 +795,22 @@
 
   <!-- footer section -->
   <footer class="footer_section">
-    <div class="text-center mt-3">
-         <a href="https://gajanand1219.github.io/portfolio/"> <p>© 2024 Design By Gajanan Deshmukh</p></a>
-      </div>
-    <div class="container">
+    <div class="text-center mt-1">
+      <a href="https://gajanand1219.github.io/portfolio/"> <p>© 2024 Design By Gajanan Deshmukh</p></a>
+   </div>
+    <div class="">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://github.com/Gajanand1219/Language-Detection-and-Text-Comparison-Application">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://github.com/Gajanand1219">Free Html Templates</a>
       </p>
-      
     </div>
   </footer>
   <!-- footer section -->
 
-
-
 <!-- jQuery and Bootstrap Bundle with Popper -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  <script src="/static/script.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
