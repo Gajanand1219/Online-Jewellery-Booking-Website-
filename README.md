@@ -85,6 +85,8 @@ The website consists of the following parts:
 ├── static/
 │   ├── images/
 │   │   └── hi.jpg
+|   |   └── hi.jpg
+|   |
 │   ├── static.css
 │   │   
 │   └──script.js
@@ -93,7 +95,7 @@ The website consists of the following parts:
 │   └── about.html
 │   └── shop.html
 |   └── index.html
-|   └── jhi.html
+|   └── blog.html
 |
 ├── order.py
 │
