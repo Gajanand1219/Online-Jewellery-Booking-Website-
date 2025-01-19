@@ -78,6 +78,29 @@ The website consists of the following parts:
 - **Database**: SQL (SQLite or MySQL)
 - **Email**: SMTP for contact form and booking confirmations
 
+## Set Up
+
+/my_project
+│
+├── static/
+│   ├── images/
+│   │   └── hi.jpg
+│   ├── static.css
+│   │   
+│   └──script.js
+│       
+├── templates/
+│   └── about.html
+│   └── shop.html
+|   └── index.html
+|   └── jhi.html
+|
+├── order.py
+│
+└── README.md
+
+
+
 ---
 - **An online jewelry booking website simplifies the shopping process for customers and provides jewelers with a platform to showcase their products globally. Let me know if you’d like detailed project steps!**
 
