@@ -85,21 +85,19 @@ The website consists of the following parts:
 ├── static/<br>
 │   ├── images/<br>
 │   │   └── hi.jpg<br>
-|   |   └── hi.jpg<br>
-|   |<br>
 │   ├── static.css<br>
-│   │<br>
-│   └──script.js<br>
-│<br>       
+│   └── script.js<br>
+│<br>
 ├── templates/<br>
 │   └── about.html<br>
 │   └── shop.html<br>
-|   └── index.html<br>
-|   └── blog.html<br>
-|<br>
+│   └── index.html<br>
+│   └── blog.html<br>
+│<br>
 ├── order.py<br>
 │<br>
 └── README.md<br>
+
 
 
 
