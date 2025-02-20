@@ -390,10 +390,111 @@
 
 
   <!-- end order section -->
+   
+
+
+  <div class="container mt-5">
+    <h2 class="text-center text-primary">Live Preview Your Jewelry</h2>
+    
+    <div class="row preview-container">
+        <!-- Selection Options -->
+        <div class="col-md-5 p-4 bg-white shadow rounded">
+            <h4 class="text-dark mb-3">Select Your Options</h4>
+
+            <label for="metal" class="form-label">Choose Metal:</label>
+            <select id="metal" class="form-select mb-3" onchange="updatePreview()">
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="platinum">Platinum</option>
+            </select>
+
+            <label for="stone" class="form-label">Choose Stone:</label>
+            <select id="stone" class="form-select mb-3" onchange="updatePreview()">
+                <option value="diamond">Diamond</option>
+                <option value="ruby">Ruby</option>
+                <option value="emerald">Emerald</option>
+            </select>
+
+            <label for="size" class="form-label d-none">Ring Size:</label>
+            <input type="number" id="size" class="form-control mb-3 d-none" value="6" min="5" max="12" onchange="updatePreview()">
+        </div>
+
+        <!-- Preview Box -->
+        <div class="col-md-5 text-center">
+            <h4 class="text-dark">Live review</h4>
+            <img id="previewImage" class="preview-image" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Gold-jewellery-jewel-henry-designs-terabass.jpg" alt="Preview Image">
+            <h5 class="mt-3" id="priceTag" class="text-success">Price: $500</h5>
+
+            <!-- Star Rating -->
+            <div class="mt-2">
+                <span class="star-rating">
+                    ★★★★★
+                </span>
+            </div>
+
+            <!-- Order Button --> 
+             <a href="/shop">
+            <button class="btn btn-success mt-3">View</button></a>
+        </div>
+    </div>
+</div>
+<!-- /////////////////// -->
+
+
+<!-- offer section -->
+
+<section class="offer_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-7 px-0">
+        <div class="box offer-box1">
+          <img src="{{ url_for('static', filename='images/o1.jpg') }}" alt="Image 1">
+
+          <div class="detail-box">
+            <h2>
+              Upto 15% Off
+            </h2>
+            <a href="/shop">
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 px-0">
+        <div class="box offer-box2">
+          <img src="{{ url_for('static', filename='images/o2.jpg') }}" alt="Image 1">
+
+          <div class="detail-box">
+            <h2>
+              Upto 10% Off
+            </h2>
+            <a href="/shop">
+              Shop Now
+            </a>
+          </div>
+        </div>
+        <div class="box offer-box3">
+          <img src="{{ url_for('static', filename='images/o3.jpg') }}" alt="Image 1">
+
+          <div class="detail-box">
+            <h2>
+              Upto 20% Off
+            </h2>
+            <a href="/shop">
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end offer section -->
 
   <!-- about section -->
 
-  <section class="about_section  ">
+  <section class="about_section pt-4 ">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -424,60 +525,10 @@
 
   <!-- end about section -->
 
-  <!-- offer section -->
-
-  <section class="offer_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7 px-0">
-          <div class="box offer-box1">
-            <img src="{{ url_for('static', filename='images/o1.jpg') }}" alt="Image 1">
-
-            <div class="detail-box">
-              <h2>
-                Upto 15% Off
-              </h2>
-              <a href="/shop">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 px-0">
-          <div class="box offer-box2">
-            <img src="{{ url_for('static', filename='images/o2.jpg') }}" alt="Image 1">
-
-            <div class="detail-box">
-              <h2>
-                Upto 10% Off
-              </h2>
-              <a href="/shop">
-                Shop Now
-              </a>
-            </div>
-          </div>
-          <div class="box offer-box3">
-            <img src="{{ url_for('static', filename='images/o3.jpg') }}" alt="Image 1">
-
-            <div class="detail-box">
-              <h2>
-                Upto 20% Off
-              </h2>
-              <a href="/shop">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end offer section -->
-
+   
   <!-- blog section -->
 
-  <section class="blog_section ">
+  <section class="blog_section pt-5 ">
     <div class="container">
       <div class="heading_container">
         <h2>
