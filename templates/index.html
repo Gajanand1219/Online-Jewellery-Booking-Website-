@@ -32,32 +32,37 @@
   <!-- header section strats -->
   <header class="header_section">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Healet
-          </span>
-        </a>
-        <div class="" id="">
-
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/shop">Shop</a>
-                <a href="/blog">Blog</a>
-              </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="/">Healet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog">Blog</a>
+                </li>
+              </ul>
             </div>
           </div>
-
         </div>
       </nav>
+      
     </div>
   </header>
   <!-- end header section -->
@@ -152,7 +157,7 @@
             <button id="orderNow2" class="bg-success text-white" data-toggle="modal" data-target="#orderModal">ORDER NOW</button>
           </div>
         </div>
-        <div class="col-sm-5 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
             <a href="/shop">
               <div class="img-box">
@@ -361,13 +366,13 @@
                         <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="paymentMethod" class="form-label">Payment Method</label>
-                        <select class="form-control p-2" name="payment_method" id="paymentMethod" required>
-                            <option value="Cash On Delivery">Cash On Delivery</option>
-                            <option value="PhonePe">PhonePe</option>
-                            <option value="cards">Cards</option>
-                        </select>
-                    </div>
+                      <label for="paymentMethod" class="form-label">Payment Method</label>
+                      <select class="form-control p-2" name="payment_method" id="paymentMethod" required>
+                          <option value="Cash On Delivery">Cash On Delivery</option>
+                          <option value="Cards">Online</option> 
+                          <option value="Cards">Cards (Stripe)</a></option>
+                      </select>
+                  </div>
   
                     <div class="mb-3">
                     </div>
